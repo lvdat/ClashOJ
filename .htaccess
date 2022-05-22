@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteRule ^clash$ clash.php
+RewriteRule ^clash/$ clash.php
+
+RewriteRule ^clash/([a-zA-Z0-9]+)$ clash.php?clash=$1
+RewriteRule ^clash/([a-zA-Z0-9]+)/$ clash.php?clash=$1
+
+RewriteRule ^clash/([a-zA-Z0-9]+)/play$ clash.php?clash=$1&action=play
+RewriteRule ^clash/([a-zA-Z0-9]+)/play/$ clash.php?clash=$1&action=play
+
+RewriteRule ^load/problem/([a-zA-Z0-9]+).js$ load.php?problem=$1
+RewriteRule ^load/clash/([a-zA-Z0-9]+).js$ load.php?clash=$1
+
+RewriteRule ^api/([a-zA-Z0-9]+)$ api.php?type=$1
+RewriteRule ^api/([a-zA-Z0-9]+)/$ api.php?type=$1
+
+RewriteRule ^api/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ api.php?type=$1&name=$2
+RewriteRule ^api/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/$ api.php?type=$1&name=$2

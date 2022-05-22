@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+    --gray: #34495e;
+    --darkgray: #2c3e50;
+  }
+
+body {
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+select.theme_selector {
+    
+}
+
+select.lang_selector option {
+    
+}
+
+select.lang_selector::-ms-expand {
+    display: none;
+}
+
+.run_code_button {
+    width: 70%;
+    margin: auto;
+    background-color: #1976b0;
+    font-weight: bold;
+    border: none;
+    color: white;
+    top: 0; bottom: 0; left: 0; right: 0;
+    text-align: center;
+    position: absolute;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.wrapper {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+.wrapper > * {
+    
+}
+
+
+
+.page-header {
+    background: white;
+    color: black;
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+.back{
+    width: 1%;
+    padding: 25px;
+}
+.head1{
+    width: 29%;
+    padding: 25px;
+    text-align: left;
+}
+.head2{
+    width: 40%;
+    padding: 25px;
+    text-align: center;
+}
+.head3{
+    width: 30%;
+    text-align: right;
+    padding: 25px;
+}
+
+
+
+.page-main {
+flex-grow: 1;
+background: white;
+display: flex;
+}
+
+.problem{
+    width: 50%;
+    border-right: 2px solid #000;
+    padding: 25px;
+}
+.problem-title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.submission{
+    overflow: hidden;
+    width: 50%;
+    margin: 0;
+    position: relative;
+}
+.code_editor{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: red;
+}
+.submit_select{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #16213d;
+    color: white;
+    height: 10%;
+    display: flex;
+}
+textarea#code{
+    width: 100%;
+    height: 100%;
+}
+
+.CodeMirror{
+    height: 100%;
+}
+
+.editor_config__select_language{
+    width: 40%;
+    position: relative;
+}
+.editor_config__select_theme{
+    width: 30%;
+    position: relative;
+
+}
+.submit_button{
+    width: 30%;
+
+    position: relative;
+}
+
+select.lang_selector {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    font-size: 17px;
+    height: 70%;
+    padding: 10px;
+    border: none;
+    width: 90%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-up" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    appearance: none;
+    background-color: #16213d;
+    color: white;
+    cursor: pointer;
+}
+select.lang_selector:hover,select.theme_selector:hover{
+    background-color: #0e1529;
+}
+select.lang_selector:active, select.lang_selector:focus{
+    background-color: #0e1529;
+    border: none;
+}
+
+select.theme_selector {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    font-size: 17px;
+    height: 70%;
+    padding: 10px;
+    border: none;
+    width: 90%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-up" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    appearance: none;
+    background-color: #16213d;
+    color: white;
+    cursor: pointer;
+}
